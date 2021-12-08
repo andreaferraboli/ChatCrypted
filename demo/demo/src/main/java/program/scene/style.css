@@ -1,0 +1,99 @@
+menuprincipale,gridchat{
+-fx-alignment: center;
+}
+
+#inviato{
+-fx-background-color: #90ee90;
+  -fx-text-align: left;
+  -fx-text-align: center;
+  -fx-font-size: 14px;
+  -fx-background-insets: 5 0 0 0;
+}
+#ricevuto{
+-fx-background-color: #008B8B;
+    -fx-text-fill: white;
+    -fx-text-align: center;
+    -fx-font-size: 14px;
+    -fx-background-insets: 5 0 0 0;
+}
+#ricevuto1{
+-fx-background-color: #008B8B;
+
+    -fx-text-fill: white;
+    -fx-text-align: center;
+    -fx-font-size: 14px;
+    -fx-background-insets: 0 0 0 0;
+    -fx-padding: 10px 10px;
+}
+#ricevutogruppo{
+
+    -fx-text-fill: black;
+    -fx-text-align: bottom;
+    -fx-font-size: 14px;
+}
+#refresh{
+-fx-background-color: #FF0000;
+    -fx-text-fill: white;
+    -fx-text-align: center;
+    -fx-background-insets: 0 5 0 5;
+}
+#buttonMenu{
+-fx-background-color: #008B8B;
+    -fx-text-fill: white;
+    -fx-padding: 10px 10px;
+    -fx-text-align: center;
+    -fx-font-size: 16px;
+    -fx-background-insets:5px;
+    -fx-position: relative;
+        -fx-left: 50%;
+}
+#buttonMenuGroup{
+-fx-background-color: #A0522D;
+    -fx-text-fill: white;
+    -fx-padding: 10px 10px;
+    -fx-text-align: center;
+    -fx-font-size: 16px;
+    -fx-background-insets:5px;
+
+}
+#nuovogruppo{
+-fx-background-color: #008B8B;
+-fx-text-fill: white;
+}
+#cerca{
+-fx-background-color: #90ee90;
+-fx-text-align: center;
+-fx-text-fill: black;
+-fx-background-insets: 0 5 0 5;
+}
+#refresh{
+-fx-background-color: #FF0000;
+-fx-text-align: center;
+-fx-text-fill: white;
+-fx-background-insets: 0 5 0 5;
+}
+#refreshmenu{
+-fx-background-color: #FF0000;
+    -fx-text-fill: white;
+    -fx-padding: 10px 10px;
+    -fx-text-align: center;
+    -fx-font-size: 16px;
+    -fx-background-insets:5px;
+}
+#nuovachat{
+-fx-background-color: #90ee90;
+-fx-text-fill: black;
+-fx-background-insets: 0 5 0 5;
+}
+#indietro{
+-fx-background-color: #90ee90;
+}
+#invio{
+-fx-background-color: #90ee90;
+}
+#invio1{
+-fx-background-color: #90ee90;
+}
+#testo{
+-fx-font-size: 15px;
+}

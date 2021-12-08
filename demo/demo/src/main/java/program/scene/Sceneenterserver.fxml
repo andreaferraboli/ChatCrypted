@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="program.scene.MainProgram">
+   <children>
+      <PasswordField fx:id="password" layoutX="243.0" layoutY="185.0" prefHeight="31.0" prefWidth="321.0" />
+      <TextField fx:id="name" layoutX="243.0" layoutY="82.0" prefHeight="31.0" prefWidth="321.0" />
+
+      <Label id="nome" alignment="CENTER" layoutX="153.0" layoutY="82.0" prefHeight="31.0" prefWidth="90.0" text="nome:">
+         <font>
+            <Font name="Arial" size="23.0" />
+         </font>
+      </Label>
+      <Label id="password" alignment="CENTER" layoutX="129.0" layoutY="185.0" prefHeight="31.0" prefWidth="114.0" text="password:" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Arial" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

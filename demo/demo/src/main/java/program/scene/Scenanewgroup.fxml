@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="124.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="program.scene.ScenenewGroup">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="488.0" minWidth="10.0" prefWidth="343.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.0" minWidth="10.0" prefWidth="345.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.0" minWidth="10.0" prefWidth="150.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="172.0" minHeight="10.0" prefHeight="137.0" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="172.0" minHeight="1.0" prefHeight="137.0" valignment="CENTER" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label id="TextNewChat" alignment="CENTER" cache="true" cacheHint="QUALITY" depthTest="ENABLE" mnemonicParsing="true" pickOnBounds="false" prefHeight="25.0" prefWidth="321.0" text="crea gruppo:" textAlignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <TextField fx:id="nuovogruppo1" prefHeight="25.0" prefWidth="209.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="invio" alignment="CENTER" contentDisplay="CENTER" layoutX="468.0" layoutY="202.0" mnemonicParsing="false" onAction="#creagruppo" prefHeight="9.0" prefWidth="81.0" scaleShape="false" text="crea" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Label id="TextNewChat" alignment="CENTER" cache="true" cacheHint="QUALITY" depthTest="ENABLE" layoutX="10.0" layoutY="91.0" mnemonicParsing="true" pickOnBounds="false" prefHeight="25.0" prefWidth="321.0" text="unisciti ad un gruppo:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <TextField fx:id="nuovogruppo11" layoutX="303.0" layoutY="91.0" prefHeight="25.0" prefWidth="209.0" GridPane.columnIndex="1" />
+      <Button fx:id="invio1" alignment="CENTER" contentDisplay="CENTER" layoutX="598.0" layoutY="90.0" mnemonicParsing="false" onAction="#entragruppo" prefHeight="9.0" prefWidth="81.0" scaleShape="false" text="join" GridPane.columnIndex="2">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</GridPane>
