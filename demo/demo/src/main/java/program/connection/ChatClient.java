@@ -1,5 +1,6 @@
 package program.connection;
 
+import chat.AES;
 import org.apache.commons.lang3.StringUtils;
 import program.scene.MainMenu;
 import program.scene.MainProgram;
@@ -47,6 +48,7 @@ public class ChatClient extends Thread{
         client.addMessageListeners(new MessageListener() {
             @Override
             public void onMessage(String fromLogin, String login, String msgBody) throws FileNotFoundException {
+                msgBody = AES.decrypt(msgBody, AES.sK);
                 System.out.println(fromLogin+ " You got a message from " + login + ": " + msgBody);
                 if(fromLogin.contains("#")){
                     fromLogin=fromLogin.replace("#","group_" );
@@ -93,13 +95,14 @@ public class ChatClient extends Thread{
     }
     public static void sendmessage(String msg, String sendTo) throws IOException {
 
-
+            msg = AES.encrypt(msg, AES.sK);
             client.msg(sendTo, name, msg);
 
 
     }
     public static void sendmessageGroup(String msg, String topic) throws IOException {
         topic = "#" + topic;
+        msg = AES.encrypt(msg, AES.sK);
         client.msg(topic,  msg);
     }
 
