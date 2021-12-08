@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="516.0" prefWidth="684.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="64.0" prefWidth="684.0" spacing="10.0" stylesheets="@../../../graphics/style.css">
+               <children>
+                  <TextField fx:id="serverIp" prefHeight="25.0" prefWidth="198.0" promptText="server ip" />
+                  <TextField fx:id="serverPortText" maxWidth="198.0" prefHeight="25.0" prefWidth="198.0" promptText="server port" />
+                  <Button mnemonicParsing="false" onAction="#connect" styleClass="Button" stylesheets="@../../../graphics/style.css" text="Config" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+            <ListView fx:id="chat" prefHeight="364.0" prefWidth="684.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </ListView>
+            <HBox alignment="CENTER_RIGHT" prefHeight="64.0" prefWidth="684.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="64.0" prefWidth="684.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="textMessage" alignment="CENTER_RIGHT" maxWidth="198.0" prefHeight="25.0" prefWidth="198.0" promptText="text message" />
+                        <Button fx:id="sendMessage" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#SendMessage" text="send" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>
